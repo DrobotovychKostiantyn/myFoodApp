@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 // import queryString from 'query-string';
 // import * as api from '../../../services/api';
 
-// import Menu from '../../Menu/index';
-// import FilterMenu from '../../FilterMenu/index';
-// import Options from '../../Options/index';
+import Menu from '../../Menu/MenuContainer';
+import FilterMenu from '../../FilterMenu/FilterContainer';
+import Options from '../../Options/OptionsContainer';
 // import BtnClear from '../../BtnClear/index';
 
 class MenuPage extends Component {
@@ -13,14 +13,14 @@ class MenuPage extends Component {
   render() {
     return (
       <div>
-        {/* <h2>MenuPage</h2>
+        <h2>MenuPage</h2>
         <FilterMenu />
         <hr />
 
         <Options />
         <hr />
 
-        <Menu /> */}
+        <Menu />
 
         {/* {currentValue && (
           <BtnClear value={currentValue} handleClearBtn={this.handleClearBtn} />

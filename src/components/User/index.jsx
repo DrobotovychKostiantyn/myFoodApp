@@ -11,6 +11,8 @@ import AboutUsPage from './Pages/AboutUsPage/index';
 import ContactPage from './Pages/ContactPage/index';
 import DeliveryPage from './Pages/DeliveryPage/index';
 import MainPage from './Pages/MainPage/index';
+import AccountPage from './Pages/AccountPage/index';
+import MealPlanner from './Pages/MealPlannerPage/index';
 
 const User = () => (
   <>
@@ -23,6 +25,8 @@ const User = () => (
       <Route exact path="/about" component={AboutUsPage} />
       <Route exact path="/contact" component={ContactPage} />
       <Route exact path="/delivery" component={DeliveryPage} />
+      <Route exact path="/account" component={AccountPage} />
+      <Route exact path="/meal-planner" component={MealPlanner} />
       <Route component={MainPage} />
     </Switch>
   </>

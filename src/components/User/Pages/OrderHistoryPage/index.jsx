@@ -162,7 +162,7 @@ export default class OrderHistoryPage extends Component {
               <input type="submit" value="Submit" />
             </form>
           </Modal> */}
-        )}
+        {/* )} */}
       </>
     );
   }

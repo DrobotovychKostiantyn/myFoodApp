@@ -2,9 +2,9 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import s from './menu.module.css';
 
-const Menu = ({ list, match, location }) => (
+const Menu = ({ menu = [], match, location }) => (
   <ul className={s.list}>
-    {list.map(({ id, image, name, price }) => (
+    {menu.map(({ id, image, name, price }) => (
       <li key={id} className={s.listItem}>
         <Link
           to={{

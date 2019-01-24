@@ -5,7 +5,7 @@ export const fetchRequest = () => ({
 });
 
 export const fetchSuccessMenu = menu => ({
-  type: types.CATEGORIES_SUCCESS_MENU,
+  type: types.FETCH_SUCCESS_MENU,
   payload: {
     menu,
   },
@@ -26,7 +26,7 @@ export const fetchError = error => ({
 });
 
 export const focusCategory = category => ({
-  type: types.category,
+  type: types.CATEGORY,
   payload: {
     category,
   },

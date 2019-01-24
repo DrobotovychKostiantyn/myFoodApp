@@ -46,7 +46,7 @@ class MainPage extends Component {
     return (
       <div>
         <div>
-          <hr />
+          <h2>Main Page!</h2>
           <hr />
           <NodeEditor onSubmit={this.handleSubmitNodeEditor} />
           <NodeList notes={notes} />
