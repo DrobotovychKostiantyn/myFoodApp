@@ -13,6 +13,7 @@ import DeliveryPage from './Pages/DeliveryPage/index';
 import MainPage from './Pages/MainPage/index';
 import AccountPage from './Pages/AccountPage/index';
 import MealPlanner from './Pages/MealPlannerPage/index';
+import CartPage from './Pages/CartPage/index';
 
 const User = () => (
   <>
@@ -27,6 +28,7 @@ const User = () => (
       <Route exact path="/delivery" component={DeliveryPage} />
       <Route exact path="/account" component={AccountPage} />
       <Route exact path="/meal-planner" component={MealPlanner} />
+      <Route path="/cart" component={CartPage} />
       <Route component={MainPage} />
     </Switch>
   </>

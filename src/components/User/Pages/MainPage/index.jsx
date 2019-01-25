@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
 
-import NodeEditor from '../../NoteEditor/index';
-import NodeList from '../../NodeList/index';
 import Modal from '../../Modal/index';
 import Loading from '../../Loading/index';
 
@@ -41,15 +39,15 @@ class MainPage extends Component {
   };
 
   render() {
-    const { isModalOpen, isModalLoading, notes } = this.state;
+    const { isModalOpen, isModalLoading } = this.state;
 
     return (
       <div>
         <div>
           <h2>Main Page!</h2>
           <hr />
-          <NodeEditor onSubmit={this.handleSubmitNodeEditor} />
-          <NodeList notes={notes} />
+          {/* <NodeEditor onSubmit={this.handleSubmitNodeEditor} />
+          <NodeList notes={notes} /> */}
         </div>
 
         <hr />

@@ -18,5 +18,10 @@
     "id": 4,
     "link": "/delivery",
     "navItem": "Delivery"
+  },
+  {
+    "id": 5,
+    "link": "/Cart",
+    "navItem": "Cart"
   }
 ]

@@ -2,7 +2,7 @@ import React from 'react';
 import { Link, withRouter } from 'react-router-dom';
 import s from './menu.module.css';
 
-const Menu = ({ menu = [], match, location }) => (
+const Menu = ({ menu = [], match, location, addToCart }) => (
   <ul className={s.list}>
     {menu.map(({ id, image, name, price }) => (
       <li key={id} className={s.listItem}>
@@ -16,6 +16,9 @@ const Menu = ({ menu = [], match, location }) => (
           <p>Name: {name}</p>
           <p>Price: {price}</p>
         </Link>
+        <button type="button" onClick={() => addToCart(id)}>
+          Add to cart
+        </button>
       </li>
     ))}
   </ul>

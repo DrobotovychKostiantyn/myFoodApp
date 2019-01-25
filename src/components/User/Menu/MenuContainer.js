@@ -4,7 +4,7 @@ import { withRouter } from 'react-router-dom';
 import View from './index';
 import { getFilteredMenuAndCategory } from '../../../modules/selectors';
 import { fetchSuccessMenu } from '../../../modules/operations';
-import { clearCategorySelector } from '../../../modules/actions';
+import { clearCategorySelector, addToCart } from '../../../modules/actions';
 
 class MenuContainer extends Component {
   state = {};
@@ -33,7 +33,7 @@ const mapStateToProps = state => ({
   menu: getFilteredMenuAndCategory(state),
 });
 
-const mapDispatch = { fetchSuccessMenu, clearCategorySelector };
+const mapDispatch = { fetchSuccessMenu, clearCategorySelector, addToCart };
 
 export default withRouter(
   connect(
