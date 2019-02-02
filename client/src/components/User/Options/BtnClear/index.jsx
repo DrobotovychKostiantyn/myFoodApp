@@ -1,9 +1,10 @@
 import React from 'react';
 
-const BtnClear = ({ handleBtn }) => (
-  <button type="button" onClick={handleBtn}>
-    Clear category filter
-  </button>
-);
+const BtnClear = ({ handleBtn, value }) =>
+  value !== '' ? (
+    <button type="button" onClick={handleBtn}>
+      Clear category filter
+    </button>
+  ) : null;
 
 export default BtnClear;
